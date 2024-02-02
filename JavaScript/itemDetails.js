@@ -44,4 +44,15 @@ const DisplayItem = async () => {
   document.getElementById("secondHalf").appendChild(secondHalfEl);
 };
 
-DisplayItem();
+const Start = async () => {
+  await DisplayItem();
+  SetEvents();
+};
+
+function SetEvents() {
+  document.getElementById("buyButton").onclick = () => {
+    location.href = "http://127.0.0.1:5500/View/Checkout.html";
+  };
+}
+
+Start();

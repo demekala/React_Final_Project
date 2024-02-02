@@ -12,12 +12,12 @@ header {
   color: white;
   text-align: center;
   padding: 2em;
-  border-bottom: 4px solid #007bff; /* Add a bottom border for emphasis */
+  border-bottom: 4px solid #007bff;
 }
 
 h1 {
-  font-size: 2.5em; /* Increase font size for a bold statement */
-  margin-bottom: 0.5em; /* Add some space below the heading */
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
 }
 
 nav {
@@ -85,20 +85,40 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   height: 66vh;
-  animation-name: bkg;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-duration: 10s;
 }
 
-@keyframes bkg {
-  0%,
-  10% {
+@keyframes bkgone {
+  from {
+    background-image: url(../images/bkg4.webp);
+  }
+  to {
     background-image: url(../images/bkg.avif);
   }
-  50%,
-  60%,
-  100% {
+}
+
+@keyframes bkgtwo {
+  from {
+    background-image: url(../images/bkg.avif);
+  }
+  to {
     background-image: url(../images/bkg2.jpg);
+  }
+}
+
+@keyframes bkgthree {
+  from {
+    background-image: url(../images/bkg2.jpg);
+  }
+  to {
+    background-image: url(../images/bkg3.jpg);
+  }
+}
+
+@keyframes bkgfour {
+  from {
+    background-image: url(../images/bkg3.jpg);
+  }
+  to {
+    background-image: url(../images/bkg4.webp);
   }
 }

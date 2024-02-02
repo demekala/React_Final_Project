@@ -19,32 +19,65 @@
   </head>
   <body>
     <header>
-      <button onclick="ReloadPage()" class="reload">
+      <button onclick="location.href = `./index.html`" class="reload">
         <h1>e-commerce</h1>
       </button>
-      <div>
-        <!-- <form id="searchForm" class="searchForm">
-          <input
-            type="text"
-            name="search"
-            id="searchInput"
-            placeholder="Search products..."
-          />
-          <button type="button" onclick="Search()">Search</button>
-        </form> -->
-      </div>
     </header>
 
     <div class="container">
       <aside class="sidebar">
-        <!-- Sidebar content goes here -->
+        <!-- Sidebar content -->
         <h2>Category</h2>
         <ul>
-          <li><a href="#">all</a></li>
-          <li><a href="#">electronics</a></li>
-          <li><a href="#">jewelery</a></li>
-          <li><a href="#">men's clothing</a></li>
-          <li><a href="#">women's clothing</a></li>
+          <li>
+            <a href="http://127.0.0.1:5500/View/store.html?category=all">all</a>
+          </li>
+          <li>
+            <a
+              href="http://127.0.0.1:5500/View/store.html?category=men's clothing"
+              >electronics</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/View/store.html?category=jewelery"
+              >jewelery</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/View/store.html?category=electronics"
+              >men's clothing</a
+            >
+          </li>
+          <li>
+            <a
+              href="http://127.0.0.1:5500/View/store.html?category=women's clothing"
+              >women's clothing</a
+            >
+          </li>
+        </ul>
+        <h2>Price</h2>
+        <ul>
+          <li>
+            <label for="minPriceInput" class="minmax">min</label>
+            <input
+              type="number"
+              name="min price"
+              placeholder="min price"
+              id="minPriceInput"
+            />
+          </li>
+          <li>
+            <label for="maxPriceInput" class="minmax">max</label>
+            <input
+              type="number"
+              name="max price"
+              placeholder="max price"
+              id="maxPriceInput"
+            />
+          </li>
+          <li>
+            <button type="button" onclick="SearchPrice()">search</button>
+          </li>
         </ul>
       </aside>
 
