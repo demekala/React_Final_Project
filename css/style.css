@@ -1,0 +1,104 @@
+body {
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Teko", sans-serif;
+}
+
+header {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  border-bottom: 4px solid #007bff; /* Add a bottom border for emphasis */
+}
+
+h1 {
+  font-size: 2.5em; /* Increase font size for a bold statement */
+  margin-bottom: 0.5em; /* Add some space below the heading */
+}
+
+nav {
+  background-color: #e9ecef;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #495057;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+section {
+  padding: 3em;
+  text-align: center;
+}
+
+h2 {
+  color: #343a40;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+li {
+  margin: 1em;
+  background-color: #fff;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 66vh;
+  animation-name: bkg;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 10s;
+}
+
+@keyframes bkg {
+  0%,
+  10% {
+    background-image: url(../images/bkg.avif);
+  }
+  50%,
+  60%,
+  100% {
+    background-image: url(../images/bkg2.jpg);
+  }
+}
