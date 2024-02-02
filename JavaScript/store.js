@@ -73,11 +73,11 @@ function AddItemToList(id, title, description, price, image) {
 }
 
 function ReloadPage() {
-  location.href = "http://127.0.0.1:5500/View/store.html";
+  location.href = "../View/store.html";
 }
 
 function ViewDetails(id) {
-  location.href = `http://127.0.0.1:5500/View/itemDetails.html?id=${id}`;
+  location.href = `../View/itemDetails.html?id=${id}`;
 }
 
 const Start = async () => {

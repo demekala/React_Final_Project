@@ -51,7 +51,7 @@ const Start = async () => {
 
 function SetEvents() {
   document.getElementById("buyButton").onclick = () => {
-    location.href = "http://127.0.0.1:5500/View/Checkout.html";
+    location.href = "../View/Checkout.html";
   };
 }
 

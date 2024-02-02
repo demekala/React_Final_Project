@@ -38,10 +38,10 @@ function SetEvents() {
   const itemTwo = document.getElementById("itemTwo");
 
   itemOne.addEventListener("click", function () {
-    location.href = "http://127.0.0.1:5500/View/itemDetails.html?id=3";
+    location.href = "../View/itemDetails.html?id=3";
   });
   itemTwo.addEventListener("click", function () {
-    location.href = "http://127.0.0.1:5500/View/itemDetails.html?id=7";
+    location.href = "../View/itemDetails.html?id=7";
   });
 }
 
